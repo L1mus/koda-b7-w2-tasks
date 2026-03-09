@@ -128,8 +128,9 @@ console.log("===========================================");
 import rafi from "./tasks/rafi/index.js";
 
 console.log("===========================================");
-
 (function taskRafi() {
+
+  console.log("-----Manual Map------");
   //manual map
   try {
     const arr =  [1,2,3,4,5];
@@ -138,6 +139,8 @@ console.log("===========================================");
   }catch(error) {
     console.error(error.message);
   }
+
+  console.log("-----Manual Map GAGAL------");
   // manual map
   // gagal
   try {
@@ -148,6 +151,7 @@ console.log("===========================================");
     console.error(error.message);
   }
 
+  console.log("-------Manual Filter-------");
   //manual filter
   try {
     const arr = [1,2,3,4,5];
@@ -157,6 +161,7 @@ console.log("===========================================");
     console.error(error.message);
   }
 
+  console.log("-------Manual Filter GAGAL--------");
   //manual filter
   //gagal
   try {
@@ -167,6 +172,7 @@ console.log("===========================================");
     console.error(error.message);
   }
 
+  console.log("-------Count Tabel--------");
   //cetak table
   try {
     rafi.cetakTable(3);
@@ -174,6 +180,7 @@ console.log("===========================================");
     console.error(error.message);
   }
 
+  console.log("-------Count Tabel GAGAL---------");
   //cetak table
   //gagal
   try {
@@ -182,6 +189,8 @@ console.log("===========================================");
     console.error(error.message);
   }
 
+
+  console.log("--------Count Array-----------");
   // Count Array
   try {
     const hasilCount = rafi.countArray([1,2,3,4,5]);
@@ -189,7 +198,8 @@ console.log("===========================================");
   } catch(error) {
     console.error(error.message);
   }
-  
+
+  console.log("-------Count Array GAGAL-----------");
   //count array
   //gagal
   try {
