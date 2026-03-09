@@ -6,8 +6,8 @@ export function manualMap(array, callback){
     for(let i = 0;i < array.length;i++){
         //panggil fungsi callbacknya
         const hasilArray = callback(array[i]);
-        //push hasil nya ke wadah
-        arr.push(hasilArray);
+        //menjalankan fungsi callback dan akan dimasukan ke arr[i]
+        arr[i] = hasilArray;
     }
     return arr;
 }
@@ -20,11 +20,15 @@ export function manualMap(array, callback){
 export function manualFilter(array, mengecek){
     //bikin wadah kosong
     const arr = [];
+    let indeksBaru = 0;
     //lakukan perulangan dari array
     for(let i = 0;i < array.length;i++){
         //mengecek dimana apakah array[i] ini lolos
         if(mengecek(array[i])){
-            arr.push(array[i]);
+            //Masukkan item yang lolos tersebut ke keranjang baru pada posisi indeks saat ini.
+            arr[indeksBaru] = array[i];
+            // berikan increment agar item beriktunya tidak menimpa item ini.
+            indeksBaru++;
         }
     }
     // return wadahnya
