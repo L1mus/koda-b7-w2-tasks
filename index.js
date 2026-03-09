@@ -191,6 +191,9 @@ console.log("===========================================");
  * Task Ali
  */
 import ali from "./tasks/ali/index.js";
+
+console.log("===========================================");
+
 (function taskAli() {
   const data = [1,2,3,4,5];
   const data2 = "string";
