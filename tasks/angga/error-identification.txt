@@ -1,0 +1,6 @@
+4. Identifkasi error:
+a. variabel user yang digunakan pada function getUserData(), processUser() dan function main() tidak terdefinisi atau tidak ada dalam scope function tersebut.
+b. data yang di terima bernilai null sehingga menyebabkan data tersebut tidak bisa di hitung jumlahnya menggunakan length pada function processData(), handleRequest(), dan main().
+c. terjadi kesalahan code berupa tanda kurung tutup ')' pada file script.js di line 5.
+d. gagal mengubah atau menambah suatu variabel object karena variabel tersebut bernilai undefined.
+e. terjadi ketika suatu function secara rekursif (memanggil dirinya sendiri) sehingga menyebabkan kehabisan memori.
