@@ -1,30 +1,25 @@
 // a. Map
 
-const arr = [1,2,3,4,]
 // Membuat fungsi timesByTwo untuk mengkalikan setiap element pada array dengan 2
-// fungsi menerima argumen dengan parameter arr
-export const timesByTwo = (arr) => {
+// fungsi menerima dua argumen dengan parameter arr sebagai data source, dan juga callback sebagai logika perubahan
+export const manualMap = (arr, cb) => {
     // melakukan pengecekkan tipe data dari parameter arr, jika bukan array, maka akan muncul error  
     if(!(arr instanceof Array)){
-        throw new Error('Input harus bertipekan array')
+        throw new Error('Input pertama harus bertipekan array')
+    }
+    if(typeof cb !== 'function'){
+        throw new Error('Input kedua harus bertipekan sebuah function')
     }
 
-    // buat sebuah array kosong untuk menampung hasil akhir
-    let result = []
+    // buat sebuah objek array baru dengan panjang sama seperti array arr
+    let result = new Array(arr.length)
 
     // lakukan perulangan dengan for loop untuk mengkalikan setiap element dengan 2
     for (let i = 0; i < arr.length; i++) {
-        // lakukan pengecekkan setiap index pada result, dikarenakan result length nya kosong, akan menimbulkan undefined
-        // jika result[i] == undefined
-        // maka setiap index akan kita inisialisasi dengan 0, agar ketika proses menambahkan tidak menghasilkan NaN
-        if(result[i] == undefined){
-            result[i] = 0
-        }
-
         // lalu result[i] yang mana mulanya adalah 0, akan ditambahkan dengan nilai dari index arr ke i dikalikan dengan 2
-        result[i] += arr[i] * 2
+        result[i] = cb(arr[i])
     }
-
     // setelah perulangan berakhir, data dari hasil akhir (result) akan kita keluarkan
     return result
 }
+
