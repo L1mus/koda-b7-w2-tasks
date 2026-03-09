@@ -5,7 +5,7 @@ export function countArray(arr){
 
     let hasilArray = 1;
     for(let i = 0; i < arr.length;i++){
-    if (!Array.isArray(arr)) {
+    if (typeof arr[i] !== "number") {
     throw new Error("Parameter harus berupa Array!");
         }
         hasilArray *= arr[i];
