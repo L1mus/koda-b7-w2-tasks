@@ -8,8 +8,8 @@ export const manualBuildInFilter = (data, callbackFn) => {
   let result = [];
   for (let i = 0; i < data.length; i++) {
     const value = callbackFn(data[i]);
-    if(value === undefined || value === null || value === false) continue;
-    result = [value, ...result];
+    if(typeof value !== "number" || typeof value !== "string") continue;
+    result = [...result,value];
   }
   return result;
 };
@@ -21,7 +21,6 @@ export const manualBuildInMap = (data,callbackFn) => {
   let result = [];
   for (let i = 0; i < data.length; i++) {
     const value = callbackFn(data[i]);
-    if(value === undefined) continue;
     result = [...result,value];
   }
   return result;
