@@ -120,3 +120,69 @@ console.log("===========================================");
   
 })();
 console.log("===========================================");
+
+/**
+ * Task Dwiki
+ */
+
+import dwiki from "./tasks/dwiki/index.js";
+
+console.log("===========================================");
+// Use IIFE here
+
+(function taskDwiki() {
+  // Tugas 1 map dan filter dwiki
+  // Success
+  try {
+    const angka = [1,2,3];
+    const hasil = dwiki.manualMap(angka, (item) => item * 2);
+
+    console.log(hasil);
+    const angka2 = [5, 10, 15, 3, 20];
+    const hasil2 = dwiki.manualFilter(angka2, (item) => item >= 10);
+    console.log(hasil2);
+  } catch (error) {
+    console.log(error.message);
+  }
+  // Failed
+  try {
+    const arrBaru = dwiki.manualMap(1,2,3,4,5);
+    console.log(arrBaru);
+    const hasil = dwiki.manualFilter(12, 5, 8, 130, 44);
+    console.log(hasil);
+  } catch (error) {
+    console.log(error.message);
+  }
+  // Tugas 2 cetak tabel dwiki
+  // Success
+  try {
+    const hasil = dwiki.cetakTabel(10);
+    hasil;
+  } catch (error) {
+    console.log(error.message);
+  }
+  // Failed
+  try {
+    const hasil = dwiki.cetakTabel("abc");
+    hasil;
+  } catch (error) {
+    console.log(error.message);
+  }
+  // Tugas 3 count Array dwiki
+  // Succes
+  try {
+    const hasil = dwiki.countArray([1,2,3,4,5]);
+    console.log(hasil);
+  } catch (error) {
+    console.log(error.message);
+  }
+  // Failed
+  try {
+    const hasil = dwiki.countArray(1,2,3,4,5);
+    console.log(hasil);
+  } catch (error) {
+    console.log(error.message);
+  }
+  
+})();
+console.log("===========================================");
