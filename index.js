@@ -134,10 +134,13 @@ console.log("===========================================");
   // Tugas 1 map dan filter dwiki
   // Success
   try {
-    const arrBaru = dwiki.manualMap([1,2,3,4,5]);
-    console.log(arrBaru);
-    const hasil = dwiki.manualFilter([12, 5, 8, 130, 44])
+    const angka = [1,2,3]
+    const hasil = dwiki.manualMap(angka, (item) => item * 2)
+
     console.log(hasil)
+    const angka2 = [5, 10, 15, 3, 20]
+    const hasil2 = dwiki.manualFilter(angka2, (item) => item >= 10)
+    console.log(hasil2)
   } catch (error) {
     console.log(error.message);
   }
