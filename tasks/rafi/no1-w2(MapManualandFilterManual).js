@@ -1,5 +1,9 @@
 //a.Map 
 export function manualMap(array, callback){
+    // jika parameter tidak berupa array akan menyebabkan error
+    if (!Array.isArray(array)) {
+    throw new Error("Parameter harus berupa Array!");
+    }
     //siapkan "wadah" kosong untuk array
     const arr = [];
     //lakukan looping
@@ -18,6 +22,10 @@ export function manualMap(array, callback){
 //b. filter
 //buat fungsi untuk melakukan manual filter
 export function manualFilter(array, mengecek){
+    // jika parameter tidak berupa array akan menyebabkan error
+    if (!Array.isArray(array)) {
+    throw new Error("Parameter harus berupa Array!");
+    }
     //bikin wadah kosong
     const arr = [];
     let indeksBaru = 0;
