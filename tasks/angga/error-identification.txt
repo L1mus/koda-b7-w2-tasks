@@ -1,0 +1,21 @@
+4. Identifkasi error:
+
+a. variabel user yang digunakan pada file app.js yang terdiri dari:
+    - function getUserData() baris ke 15 urutan ke 10,
+    - processUser() baris ke 30 urutan ke 5,
+    - dan function main() baris ke 50 urutan ke 2
+    tidak terdefinisi atau tidak ada dalam scope function tersebut.
+
+b. data yang di terima bernilai null sehingga menyebabkan data tersebut tidak bisa di hitung jumlahnya menggunakan length pada:
+    - file data.js function processData() baris ke 8 urutan ke 15,
+    - file server.js handleRequest() baris ke 20 urutan ke 5,
+    - dan file app.js function main() baris ke 35 urutan ke 2.
+
+c. terjadi kesalahan code berupa tanda kurung tutup ')' pada file script.js di baris ke 5.
+
+d. gagal mengubah atau menambah suatu variabel object karena variabel tersebut bernilai undefined pada:
+    - file order.js function updateOrder() baris ke 18 urutan ke 12,
+    - file order.js function processOrder() baris ke 35 urutan ke 5,
+    - dan file cart.js function checkout() baris ke 50 urutan ke 2.
+
+e. terjadi ketika suatu function secara rekursif (memanggil dirinya sendiri) sehingga menyebabkan kehabisan memori pada function recursiveFunction() baris ke 10 urutan ke 3.
