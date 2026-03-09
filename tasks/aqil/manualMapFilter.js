@@ -1,19 +1,19 @@
 export function manualMap(arr,callback) {
-    console.log("==========Manual Map==========") //menampilkan judul saat fungsi dijalankan
+    console.log("==========Manual Map=========="); //menampilkan judul saat fungsi dijalankan
     //validasi : mengecek apakah parameter pertama bertipe array
     if(!Array.isArray(arr)) {
         throw new Error("Input harus bertipe data Array"); // jika bukan array, program akan melempar error
     }
     // validasi: mengecek apakah parameter kedua adalah function
     if(typeof callback !== "function"){
-        throw new Error("Input kedua harus bertipekan sebuah function") // jika bukan function, program akan melempar error
+        throw new Error("Input kedua harus bertipekan sebuah function"); // jika bukan function, program akan melempar error
     }
     // membuat array baru dengan panjang yang sama seperti array input
     const hasil = new Array(arr.length); // array akan disimpan di hasil
     // melakukan perulangan untuk mengakses setiap elemen array
     for (let i = 0; i < arr.length; i++) {
         // menjalankan callback pada setiap element, hasil dari callback akan di masukkan ke array hasil pada index yang sama
-        hasil[i] = callback(arr[i])
+        hasil[i] = callback(arr[i]);
     }
     // mengembalikkan array hasil transformasi
     return hasil;

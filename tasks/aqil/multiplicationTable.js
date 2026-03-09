@@ -1,5 +1,5 @@
 export function cetakTabel (n) {
-    console.log("==========Multiplication Table Number==========")
+    console.log("==========Multiplication Table Number==========");
     if (typeof n !== "number" || n <= 0) {
         throw new Error("Parameter harus bertipe data nomor dan harus nomor posistif");
     };

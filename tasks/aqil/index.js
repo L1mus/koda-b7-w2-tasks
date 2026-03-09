@@ -7,6 +7,6 @@ const aqil = {
     manualFilter,
     cetakTabel,
     countArray
-}
+};
 
 export default aqil;
