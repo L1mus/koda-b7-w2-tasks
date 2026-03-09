@@ -3,6 +3,7 @@
  */
 
 import fakhri from "./tasks/fakhri/index.js";
+import ali from "./tasks/ali/index.js"
 
 console.log("===========================================");
 // Use IIFE here
@@ -39,3 +40,5 @@ console.log("===========================================");
   }
 })();
 console.log("===========================================");
+
+
