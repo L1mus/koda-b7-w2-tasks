@@ -2,6 +2,7 @@
 
 // fungsi menerima dua argumen dengan parameter arr sebagai data source, dan juga callback sebagai logika perubahan
 export const manualMap = (arr, cb) => {
+    console.log("\n---- manual map function ----");
     // melakukan pengecekkan tipe data dari parameter arr, jika bukan array, maka akan muncul error  
     if(!(arr instanceof Array)){
         throw new Error('Input pertama harus bertipekan array')
@@ -27,6 +28,7 @@ export const manualMap = (arr, cb) => {
 
 // fungsi menerima dua argumen dengan parameter arr sebagai data source, dan juga callback sebagai logika pemilter
 export const manualFilter = (arr, cb) => {
+    console.log("\n---- manual filter function ----");
     // melakukan pengecekkan tipe data dari parameter arr, jika bukan array, maka akan muncul error  
     if(!(arr instanceof Array)){
         throw new Error('Input pertama harus bertipekan array')
@@ -35,7 +37,7 @@ export const manualFilter = (arr, cb) => {
     if(typeof cb !== 'function'){
         throw new Error('Input kedua harus bertipekan sebuah function')
     }
-    
+
     // membuat array kosong dengan nama result sebagai penampung hasil
     let result = []
 
