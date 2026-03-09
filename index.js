@@ -52,7 +52,7 @@ console.log("===========================================");
 ];
   try {
     const manualMap = ali.manualBuilInMap(data,...information);
-    console.log(manualMap);
+    console.log(manualMap(data,"name","hobbies"));
   } catch (error) {
     console.log(error.message);
   }
