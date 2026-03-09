@@ -1,0 +1,23 @@
+a. Error terjadi karena variabel user belum dideklarasikan
+error terjadi di :
+1. file app.js pada function getUserData di baris 15 dan di karakter ke 10
+2. file app.js pada function processUser di baris 30 dan di karakter ke 5
+3. file app.js pada function main di baris ke 50 dan di karakter ke 2
+
+b. Error terjadi karena program tidak bisa membaca length dari sebuah properti yang nilainya null
+error terjadi di : 
+1. file data.js pada function processData di baris ke 8 dan di karakter ke 15
+2. file server.js pada function handleRequest di baris ke 20 dan di karakter ke 5
+3. file app.js pada function main di baris ke 35 dan di karakter ke 2
+
+c. Eror terjadi karena adanya kesalahan syntax kurung tutup ')'
+yang terjadi pada file script.js baris ke 5
+
+d. Error terjadi karena kesalahan dalam setting status ke dalam objek atau variabel yang sebenarnya tidak ada
+error terjadi di :
+1. file order.js pada function updateOrder di baris 18 dan di karakter ke 12
+2. file order.js pada function processNumber di baris ke 35 dan di karakter ke 5
+3. file cart.js pada function checkout di baris 50 dan di karakter ke 2
+
+e. Error terjadi karena kode menjalankan fungsi secara berulang ulang tanpa henti yang membuat memory atau stack penuh
+error terjadi di file app.js pada function recursiveFunction di baris ke 10 dan di karakter ke 3
