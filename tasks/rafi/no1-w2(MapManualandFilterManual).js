@@ -2,7 +2,7 @@
 export function manualMap(array, callback){
     // jika parameter tidak berupa array akan menyebabkan error
     if (!Array.isArray(array)) {
-    throw new Error("Parameter harus berupa Array!");
+        throw new Error("Parameter harus berupa Array!");
     }
     //siapkan "wadah" kosong untuk array
     const arr = [];
@@ -21,10 +21,10 @@ export function manualMap(array, callback){
 
 //b. filter
 //buat fungsi untuk melakukan manual filter
-export function manualFilter(array, mengecek){
+export function manualFilter(array, callBack){
     // jika parameter tidak berupa array akan menyebabkan error
     if (!Array.isArray(array)) {
-    throw new Error("Parameter harus berupa Array!");
+        throw new Error("Parameter harus berupa Array!");
     }
     //bikin wadah kosong
     const arr = [];
@@ -32,7 +32,7 @@ export function manualFilter(array, mengecek){
     //lakukan perulangan dari array
     for(let i = 0;i < array.length;i++){
         //mengecek dimana apakah array[i] ini lolos
-        if(mengecek(array[i])){
+        if(callBack(array[i])){
             //Masukkan item yang lolos tersebut ke keranjang baru pada posisi indeks saat ini.
             arr[indeksBaru] = array[i];
             // berikan increment agar item beriktunya tidak menimpa item ini.
