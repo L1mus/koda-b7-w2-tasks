@@ -1,11 +1,11 @@
 //a.Map 
 export function manualMap(array, callback){
     //siapkan "wadah" kosong untuk array
-    let arr = [];
+    const arr = [];
     //lakukan looping
     for(let i = 0;i < array.length;i++){
         //panggil fungsi callbacknya
-        let hasilArray = callback(array[i]);
+        const hasilArray = callback(array[i]);
         //push hasil nya ke wadah
         arr.push(hasilArray);
     }
@@ -19,7 +19,7 @@ export function manualMap(array, callback){
 //buat fungsi untuk melakukan manual filter
 export function manualFilter(array, mengecek){
     //bikin wadah kosong
-    let arr = [];
+    const arr = [];
     //lakukan perulangan dari array
     for(let i = 0;i < array.length;i++){
         //mengecek dimana apakah array[i] ini lolos

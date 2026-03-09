@@ -19,7 +19,7 @@
   "description": "Week 2 - Forking Task",
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.5.0",
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.4",
     "globals": "^16.5.0"
   }
 }

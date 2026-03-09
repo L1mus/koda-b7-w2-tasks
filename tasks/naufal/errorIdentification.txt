@@ -1,0 +1,40 @@
+a - Uncaught ReferenceError, adalah error yang muncul karena mencoba menggunakan variabel atau fungsi yang belum didefinisikan 
+    Error user not defined yang berarti variable dari user itu tidak didefinisi / tidak ada 
+    terjadi di file app.js
+    pada fungsi 
+        getUserData, pada line 15 dan column 10
+        processUser, pada line 30 dan column 5
+        main, pada line 50 dan column 2
+
+b - TypeError, adalah error yang terjadi karena kesalahan tipe/tidak sesuai
+    Error cannot read properties of null (reading 'length') itu terjadi karena  mencoba mengambil panjang dari suatu variable yang bernilai null
+    terjadi pada 3 file:
+        data.js, pada fungsi
+            processData, pada line 8 column 15
+        server.js, pada fungsi
+            handleRequest, pada line 20 column 5
+        app.js, pada fungsi
+            main, pada line 35 column 2
+
+c - SyntaxError, adalah error yang terjadi karena adanya kesalahan saat penulisan kode yang tidak sesuai dengan aturan bahasanya,
+    hal ini menyebabkan program tidak dapat dijalankan
+    Error error unexpected token ")" terjadi karena adanya ')' yang tidak ada tag openingnya, atau dia berdisi sendiri,
+    entah karena lupa menambahkan opening tag nya, atau karena typo
+    terjadi pada file script.js
+        pada line 5 
+
+d - TypeError, adalah error yang terjadi karena kesalahan tipe/tidak sesuai
+    Error cannot set properties of undefined (setting 'status') terjadi saat penetapan nilai ke properti bernama status,
+    namun pada objek yang bertipe undefined, atau belum ada
+    terjadi pada file 2 file,
+        order.js, pada fungsi
+            updateOrder, line 18 column 12
+            processOrder, line 35 column 5
+        cart.js, pada fungsi
+            checkout, line 50 column 2
+
+e - RangeError, adalah error yang terjadi saat suatu nilai tidak termasuk dalam rentang nilai yang diizinkan
+    Maximum call stack size exceeded, terjadi karena program dijalankan dan callstack penuh, biasanya disebabkan oleh infinity loop, atau recursive function yang tidak berhenti
+    terjadi pada file,
+     app.js pada fungsi,
+        recursiveFunction line 10 column 3
